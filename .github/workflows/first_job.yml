@@ -17,7 +17,6 @@ jobs:
             - name: Show Present Working Directory
               run: pwd
 
-name: First Workflow
 
 on:
   - push
