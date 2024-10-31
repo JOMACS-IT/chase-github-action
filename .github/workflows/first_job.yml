@@ -5,24 +5,6 @@ on:
 
 jobs: 
     first_job: 
-        name: jomacs-k8s
-        runs-on: ubuntu-latest
-        steps:
-            - name: First Message
-              run: echo "My first GitHub Actions Job"
-
-            - name: List All Files including Hidden
-              run: ls -1a
-
-            - name: Show Present Working Directory
-              run: pwd
-
-
-on:
-  - push
-
-jobs: 
-    first_job: 
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
@@ -30,6 +12,7 @@ jobs:
 
             - name: List and Read files
               run: |
-                echo "My first GitHub Actions Job"
+                echo "My first GitHu Actions Job"
                 ls -1
                 cat dockerfile
+
