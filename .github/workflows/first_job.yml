@@ -14,5 +14,6 @@ jobs:
               run: |
                 echo "My first GitHu Actions Job"
                 ls -1
-                cat dockerfile
+                # cat dockerfile
 
+#NB: You have no dockerfile in your root directory. Please don't use 'cat dockerfile' until you have it.
