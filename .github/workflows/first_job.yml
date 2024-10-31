@@ -9,10 +9,28 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: First Message
-              run: echo "My first GitHu Actions Job"
+              run: echo "My first GitHub Actions Job"
 
             - name: List All Files including Hidden
               run: ls -1a
 
             - name: Show Present Working Directory
               run: pwd
+
+name: First Workflow
+
+on:
+  - push
+
+jobs: 
+    first_job: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
+            - name: List and Read files
+              run: |
+                echo "My first GitHub Actions Job"
+                ls -1
+                cat dockerfile
