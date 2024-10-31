@@ -5,13 +5,14 @@ on:
 
 jobs: 
     first_job: 
+        name: jomacs-k8s
         runs-on: ubuntu-latest
         steps:
-            - name: Welcome Message
+            - name: First Message
               run: echo "My first GitHu Actions Job"
 
-            - name: List Files 
-              run: ls 
+            - name: List All Files including Hidden
+              run: ls -1a
 
-            - name: Read file 
-              run: cat dockerfile
+            - name: Show Present Working Directory
+              run: pwd
